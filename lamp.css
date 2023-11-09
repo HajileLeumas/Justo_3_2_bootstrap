@@ -1,4 +1,4 @@
-/* Basic styling for your website */
+
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -12,6 +12,7 @@ header {
 }
 
 .topnav {
+
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -32,11 +33,19 @@ header {
 }
 
 button[type="submit"] {
-    background-color: #555;
+    background-color: #3c5b96;
     color: white;
     border: none;
     padding: 5px 10px;
     cursor: pointer;
+}
+button[type="icon"] {
+  background-color: whitesmoke;
+  color: white;
+  border: none;
+  height: 20%;
+  cursor: pointer;
+  padding: 5px 10px;
 }
 
 main {
@@ -56,5 +65,125 @@ main {
 .product img {
     max-width: 100%;
 }
+.product:hover{
+  transform:scale(1.04);
+  transition:transform 0.3s ease;
 
-/* Add more CSS for styling products as needed */
+}
+
+
+  .fa-cart-plus{
+    background:#3c5b96;
+  }
+  
+  .addtocart{
+    display:block;
+    
+    border-radius:180px;
+    border:none;
+    font-size:1.5em;
+    position:relative;
+    background:#3c5b96;
+    cursor:pointer;
+    height:1.5em;
+    width:10em;
+    overflow:hidden;
+    transition:transform 0.1s;
+    z-index:1;
+    padding: 5px;
+    margin: 22px;
+    max-width: 200px;
+  }
+  .addtocart:hover{
+    transform:scale(1.1);
+  }
+  .pretext{
+    color:white;
+    text-align:center;
+    
+    color:#fff;
+    background: #3c5b96;
+    position:relative;
+    top:0;
+    left:0;
+    height:100%;
+    width:100%;
+    font-size:75%;
+    vertical-align: middle;
+    justify-content:center;
+    align-items:center;
+    font-family: 'Quicksand', sans-serif;
+  }
+  .i{
+    margin-right:10px;
+    line-height:1.4em;
+    text-shadow: none !important;
+    font-weight:bold;
+  }
+  .done{
+    background:#be2edd;
+    position:absolute;
+    width:100%;
+    top:0;
+    left:0;
+    transition:transform 0.3s ease;
+  
+    transform:translate(-110%) skew(-40deg);
+  }
+  .posttext{
+    display:flex;
+    flex-direction:column;
+    justify-content:space-around;
+    background:#be2edd;
+  }
+  .fa-check{
+    background:#be2edd;
+  }
+  
+  .buynow{
+    display:block;
+    border-radius:180px;
+    border:none;
+    font-size:1.5em;
+    position:relative;
+    background:#be2edd;
+    cursor:pointer;
+    height:1.5em;
+    width:10em;
+    overflow:hidden;
+    transition:transform 0.1s;
+    z-index:1;
+    padding: 5px;
+    margin: 22px;
+    max-width: 200px;
+  }
+  .buynow:hover{
+    transform:scale(1.1);
+  }
+  .buytext{
+    color:white;
+    text-align:center;
+    
+    color:#fff;
+    background: #be2edd;
+    position:relative;
+    top:0;
+    left:0;
+    height:100%;
+    width:100%;
+    font-size:75%;
+    vertical-align: middle;
+    justify-content:center;
+    align-items:center;
+    font-family: 'Quicksand', sans-serif;
+  }
+  .buytextdone{
+    background:#be2edd;
+    position:absolute;
+    width:100%;
+    top:0;
+    left:0;
+    transition:transform 0.3s ease;
+  
+    transform:translate(-110%) skew(-40deg);
+  }

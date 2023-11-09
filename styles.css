@@ -16,7 +16,7 @@ body {
     align-items: center;
 }
 
-.bnp {
+.lamp {
  color:aliceblue;
  font-family: cursive
 }
@@ -54,4 +54,7 @@ button {
     border: none;
     border-radius: 5px;
     cursor: pointer;
+}
+input[placeholder]{
+text-align: center;
 }
